@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OZ風 仮想空間RPG</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <header>
+      <h1>🌐 仮想空間 OZ Online</h1>
+    </header>
+
+    <section id="status-panel">
+      <div>🧑‍💼 名前: <span id="player-name">にんげん</span></div>
+      <div>⚔️ ジョブ: <span id="player-job">剣士</span></div>
+      <div>💖 HP: <span id="player-hp">100</span>/<span id="player-max-hp">100</span></div>
+      <div>📈 レベル: <span id="player-level">1</span></div>
+      <div>🎒 アイテム: <span id="player-items">なし</span></div>
+    </section>
+
+    <section id="map-container">
+      <div id="map"></div>
+    </section>
+
+    <section id="log-panel">
+      <h2>📜 ログ</h2>
+      <div id="log"></div>
+    </section>
+
+    <section id="controls">
+      <h2>🎮 操作</h2>
+      <div>
+        <button onclick="movePlayer('up')">↑</button>
+        <br>
+        <button onclick="movePlayer('left')">←</button>
+        <button onclick="movePlayer('down')">↓</button>
+        <button onclick="movePlayer('right')">→</button>
+      </div>
+    </section>
+
+    <section id="skill-panel">
+      <h2>✨ スキル</h2>
+      <div id="skills">
+        <!-- スキルボタンはJSで生成 -->
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 にんげん仮想空間プロジェクト</p>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
